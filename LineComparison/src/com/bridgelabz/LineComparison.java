@@ -13,7 +13,7 @@ public class LineComparison {
 		int X2 = sc.nextInt();
 		int Y2 = sc.nextInt();
 		//calculate the length1
-		double len1 = Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
+		Integer length1 =(int)Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
 		
 		System.out.println("Enter X3 & Y3 co-ordinates");
 		int X3 = sc.nextInt();
@@ -21,8 +21,15 @@ public class LineComparison {
 		System.out.println("Enter X4 & Y4 co-ordinates");
 		int X4 = sc.nextInt();
 		int Y4 = sc.nextInt();
-		//calculate the length2
-		double len2 = Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
+		//calculate the length
+		Integer length2 = (int)Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
+		
+		System.out.println("Length of line : " +length1);
+		System.out.println("Length of line : " +length2);
+
+		if(length1.equals(length2))
+
+		Integer len2 =(int)Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
 		
 		System.out.println("Length1 of line : " +len1);
 		System.out.println("Length2 of line : " +len2);
