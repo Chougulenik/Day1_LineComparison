@@ -13,7 +13,7 @@ public class LineComparison {
 		int X2 = sc.nextInt();
 		int Y2 = sc.nextInt();
 		//calculate the length1
-		double len1 = Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
+		Integer len1 = (int)Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
 		
 		System.out.println("Enter X3 & Y3 co-ordinates");
 		int X3 = sc.nextInt();
@@ -22,23 +22,23 @@ public class LineComparison {
 		int X4 = sc.nextInt();
 		int Y4 = sc.nextInt();
 		//calculate the length2
-		double len2 = Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
+		Integer len2 = (int)Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
 		
 		System.out.println("Length1 of line : " +len1);
 		System.out.println("Length2 of line : " +len2);
 	
         
-		if(len1 == len2)
+		if(len1.compareTo(len2) == 1)
 			
-			System.out.println("Length1 is equal to Length2");
-		
-		else if(len1 > len2 )
-		
 			System.out.println("Length1 is greater than Length2");
+		
+		else if(len1.compareTo(len2) == -1 )
+		
+			System.out.println("Length1 is less than Length2");
 		
 		else
 			
-			System.out.println("Length1 is less than length2");
+			System.out.println("Length1 is equal to length2");
 
 	}
 
