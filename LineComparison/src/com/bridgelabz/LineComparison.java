@@ -21,31 +21,16 @@ public class LineComparison {
 		System.out.println("Enter X4 & Y4 co-ordinates");
 		int X4 = sc.nextInt();
 		int Y4 = sc.nextInt();
-		//calculate the length
+		//calculate the length2
 		Integer length2 = (int)Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
 		
 		System.out.println("Length of line : " +length1);
 		System.out.println("Length of line : " +length2);
 
 		if(length1.equals(length2))
-
-		Integer len2 =(int)Math.sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
-		
-		System.out.println("Length1 of line : " +len1);
-		System.out.println("Length2 of line : " +len2);
-	
-        
-		if(len1 == len2)
-			
 			System.out.println("Length1 is equal to Length2");
-		
-		else if(len1 > len2 )
-		
-			System.out.println("Length1 is greater than Length2");
-		
 		else
-			
-			System.out.println("Length1 is less than length2");
+			System.out.println("Length1 is not equal to Length2");
 
 	}
 
